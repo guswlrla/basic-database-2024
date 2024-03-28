@@ -41,4 +41,5 @@ IoT 개발자과정 SQLServer 학습 리포지토리
         [HAVING 검색조건(들)]
          [ORDER BY 검색조건(들) [ASC|DESC]]
         ```
+    - SELECT문 학습
 ## 2일차
