@@ -64,5 +64,14 @@ IoT 개발자과정 SQLServer 학습 리포지토리
         - 차수(degree) - 속성의 개수
         - 카디널리티(cardinality) - 튜플의 수
 
-    ![용어정리](https://github.com/guswlrla/basic-database-2024/blob/main/images/db004.png)
+        ![용어정리](https://github.com/guswlrla/basic-database-2024/blob/main/images/db004.png)
+
+        - 릴레이션 특징
+            1. 속성은 단일값을 가짐(책 이름이 여러개 들어가면 x)
+            2. 속성은 다른 이름으로 구성(책 이름이라는 속성이 두 번 있으면 x)
+            3. 속성의 값은 정의된 도메인값만 가짐(대학교 학년에 5학년이 있으면 x)
+            4. 속성의 순서는 상관없음
+            5. 릴레이션 내 중복된 튜플 허용안함(같은 책 정보를 두 번 넣을 수 x)
+            6. 튜플 순서는 상관없음
+
 - DML 학습
