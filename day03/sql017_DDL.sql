@@ -54,4 +54,23 @@ CREATE TABLE NewBook (
     publisher VARCHAR(20) UNIQUE, -- 유니크 제약조건
     price INT DEFAULT 10000 CHECK(price > 1000), -- 기본값 제약조건, 체크 제약조건
     PRIMARY KEY (bookname, publisher) -- 개체 무결성 제약조건
-)
+);
+
+-- 새 고객테이블(기본키)
+CREATE TABLE NewCustomer (
+    custid INT PRIMARY KEY,
+    custname VARCHAR(40),
+    custaddress VARCHAR(255),
+    phone VARCHAR(30)
+);
+
+-- 새 주문테이블(기본키 + 외래키)
+CREATE TABLE NewOrder (
+    orderid INT,
+    custid INT NOT NULL,
+    bookid INT NOT NULL,
+    saleprice INT,
+    orderdate DATE,
+    PRIMARY KEY (orderid),
+    FOREIGN KEY (custid) REFERENCES NewCustomer(custid) ON DELETE CASCADE
+);
