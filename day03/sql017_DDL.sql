@@ -74,3 +74,5 @@ CREATE TABLE NewOrder (
     PRIMARY KEY (orderid),
     FOREIGN KEY (custid) REFERENCES NewCustomer(custid) ON DELETE CASCADE
 );
+
+-- 2. 테이블 변경/수정 ALTER
