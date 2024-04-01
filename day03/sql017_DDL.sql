@@ -76,3 +76,35 @@ CREATE TABLE NewOrder (
 );
 
 -- 2. 테이블 변경/수정 ALTER
+CREATE TABLE MyBook (
+    bookid      INT,
+    bookname    VARCHAR(20),
+    publisher   VARCHAR(20),
+    price       INT,
+);
+
+-- MyBook에 isbn이라는 컬럼을 추가
+ALTER TABLE MyBook ADD isbn VARCHAR(13);
+
+-- isbn을 INT형으로 변경
+ALTER TABLE MyBook ALTER COLUMN isbn INT;
+
+-- isbn을 컬럼 삭제
+ALTER TABLE MyBook DROP COLUMN isbn;
+
+-- bookname을 NOT NULL로 제약조건 적용
+ALTER TABLE MyBook ALTER COLUMN bookname INT NOT NULL;
+
+-- bookid에 기본키 설정
+ALTER TABLE MyBook ALTER COLUMN bookid INT NOT NULL;
+ALTER TABLE MyBook ADD PRIMARY KEY(bookid);
+
+-- 3. 테이블 삭제
+DROP TABLE MyBook;
+
+-- 자식테이블을 삭제하기 전에는 절대 안지워짐
+DROP TABLE NewOrder;
+DROP TABLE NewCustomer; 
+
+DROP TABLE TestTable;
+DROP TABLE NewBook;
