@@ -1,10 +1,9 @@
 ﻿-- OUTER JOIN(외부 조인)
 -- LEFT OUTER JOIN / RIGHT OUTER JOIN
-
-SELECT *
+SELECT * 
   FROM TableA A
-  LEFT OUTER JOIN TableB B
-    ON A.key = B.Key;
+ LEFT OUTER JOIN TableB B 
+    ON A.key = B.key;
 
 -- 이 둘은 같은 의미의 쿼리
 SELECT * 
