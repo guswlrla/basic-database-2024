@@ -7,7 +7,7 @@ SELECT *
     ON A.key = B.Key;
 
 -- 이 둘은 같은 의미의 쿼리
-SELECT *
+SELECT * 
   FROM TableB B
  RIGHT OUTER JOIN TableA A
     ON A.key = B.key;
