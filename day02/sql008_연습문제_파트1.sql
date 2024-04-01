@@ -9,7 +9,7 @@ SELECT *
   FROM Book
  WHERE price >= 20000;
 
---3. 박지성의 총 구매액
+-- 3. 박지성의 총 구매액
 SELECT *
   FROM Customer; -- 박지성, custid 1번
 
