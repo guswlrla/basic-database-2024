@@ -144,7 +144,7 @@ IoT 개발자과정 SQLServer 학습 리포지토리
         ```sql
         -- 테이블 생성에 한정
         CREATE TABLE 테이블명
-        ({속성이름 데이터타입
+         ({속성이름 데이터타입
             [NOT NULL]
             [UNIQUE]
             [DEFAULT 기본값]
@@ -154,7 +154,7 @@ IoT 개발자과정 SQLServer 학습 리포지토리
             {[FORIEGN KEY 속성이름 REFERENCES 테이블이름(속성이름)]
                  [ON UPDATE [NO ACTION | CASCADE | SET NULL | SET DEFAULT]]
             }
-        )
+         )
         ```
     - ALTER - 개체를 변경(수정)하는 구문
     - DROP - 개체를 삭제하는 구문
