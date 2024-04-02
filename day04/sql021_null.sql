@@ -38,3 +38,8 @@ SELECT custid
      , [address]
      , ISNULL(phone, '연락처 없음') AS phone
   FROM Customer;
+
+-- TOP n (TOP은 내장된 키워드, 함수x)
+SELECT TOP 3 orderid, custid, saleprice
+  FROM Orders
+ ORDER BY saleprice DESC; -- 정렬된 다음 상위3개로 자름

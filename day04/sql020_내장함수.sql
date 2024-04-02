@@ -36,6 +36,19 @@ SELECT '|' + LTRIM('     HELLO     ') + '|'
      , '|' + RTRIM('     HELLO     ') + '|' 
      , '|' + TRIM('     HELLO     ') + '|' 
 
+-- LEFT(), RIGHT(), SUBSTRING()
+SELECT LEFT('HELLO WORLD!', 5)
+      , RIGHT('HELLO WORLD!', 5)
+      , SUBSTRING('HELLO WORLD!', 7, 5);
+
+-- CHARINDEX() 문자 찾기
+SELECT CHARINDEX('sql', 'Microsoft SQL Server 2022');
+
+-- SUBSTRING() 연계
+SELECT SUBSTRING('Microsoft SQL Server 2022',
+               CHARINDEX('sql', 'Microsoft SQL Server 2022'),
+               LEN('sql'));
+
 -- SUBSTRING, DB는 인덱스가 1부터 시작(★)
 SELECT SUBSTRING([name], 1, 1) AS '성씨'
      , COUNT(*) AS '성씨별 인원수'
