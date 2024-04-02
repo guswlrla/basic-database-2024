@@ -17,7 +17,7 @@ SELECT COUNT (DISTINCT b.publisher) AS '구매책 출판사 수'
 -- 2. 박지성이 구매한 도서의 이름, 가격, 정가와 판매가격의 차이
 SELECT b.bookname, b.price, o.saleprice
      , (b.price - o.saleprice) AS '정가와의 차'
-  FROM Book AS b, Order AS o, Customer AS c
+  FROM Book AS b, Orders AS o, Customer AS c
  WHERE b.bookid = o.bookid
    AND o.custid = c.custid
    AND c.[name] = '박지성';
