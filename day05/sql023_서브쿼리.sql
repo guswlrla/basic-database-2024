@@ -22,3 +22,9 @@ SELECT o1.orderid
  WHERE o1.saleprice > ALL (SELECT MAX(saleprice)
                             FROM Orders
                            WHERE custid = 3);
+
+-- EXISTS, NOT EXISTS - 열을 명시안함😊😊
+-- 대한민국 거주 고객에게 판매한 도서의 총판매액
+SELECT *
+  FROM Customer AS c
+ WHERE c.address LIKE ''
