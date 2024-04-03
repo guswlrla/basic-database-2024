@@ -215,8 +215,39 @@ IoT 개발자과정 SQLServer 학습 리포지토리
 ## 5일차
 - SQL 고급
     - 서브쿼리 리뷰
-    - 뷰
+    - 뷰 - 복잡한 쿼리로 생성되는 결과를 자주 사용하기 위해서 만드는 개체
+        - 편리하고 보안에 강하며, 논리적 독립성을 띰
+        - 원본데이터가 변경되면 같이 변경되고, 인덱스 생성은 어렵, CUD 연산에 제약이 있음
+
+        ```sql
+        -- 생성
+        CREATE VIEW 뷰이름 [(열이름 [, ...])]
+        AS <SELECT 쿼리문>;
+
+        -- 수정
+        ALTER VIEW 뷰이름 [(열이름 [, ...])]
+        AS <SELECT 쿼리문>;
+
+        -- 삭제
+        DROP VIEW 뷰이름;
+        ```
+
     - 인덱스
+
+        ```sql
+        -- 생성
+        CREATE [UNIQUE] [CLUSTERED|NONCLUSTERED] INDEX 인덱스이름
+        ON 테이블명 (속성이름 [ASC|DESC] [, ...n]);
+        
+        -- 수정
+        ALTER INDEX {인덱스이름|ALL}
+        ON 테이블명 { REBUILD | DISABLE | REORGANIZE };
+
+        -- 삭제
+        DROP INDEX 인덱스이름 ON 테이블명;
+        ```
+        - SSMS에서 실행계획을 가지고 쿼리 실행 성능을 체크할 수 있음
+
 
 - 파이썬 SQL Server 연동 프로그래밍
     - PyQt GUI 생성
