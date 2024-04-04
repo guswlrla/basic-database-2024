@@ -282,7 +282,7 @@ IoT 개발자과정 SQLServer 학습 리포지토리
     
     - 실행화면
       
-      https://github.com/guswlrla/basic-database-2024/assets/158007465/9822b159-a69d-4a09-bc1a-2b362970a46a
+  https://github.com/guswlrla/basic-database-2024/assets/158007465/9822b159-a69d-4a09-bc1a-2b362970a46a
 
 
 
