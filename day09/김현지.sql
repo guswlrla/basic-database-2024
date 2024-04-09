@@ -22,9 +22,9 @@ SELECT m.Names AS '회원명'
 	 , m.Addr AS '회원주소'
 	 , NULL AS '대여일'
   FROM membertbl AS m
- WHERE m.Levels = 'A' AND m.memberIdx NOT IN (SELECT r.memberIdx
-											    FROM rentaltbl AS r, membertbl AS m
-											   WHERE r.memberIdx = m.memberIdx)
+ WHERE m.Levels = 'A' AND m.memberIdx NOT IN (SELECT r.memberIdx 
+ 												FROM rentaltbl AS r, membertbl AS m 
+												WHERE r.memberIdx = m.memberIdx)
 
 -- 4번 문제
 SELECT d.Names AS '책 장르'
