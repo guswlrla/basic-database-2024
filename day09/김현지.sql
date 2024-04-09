@@ -40,4 +40,3 @@ SELECT ISNULL(d.Names, '--합계--') AS '책 장르'
   FROM bookstbl AS b, divtbl AS d
  WHERE b.Division = d.Division
  GROUP BY d.Names WITH ROLLUP
-
