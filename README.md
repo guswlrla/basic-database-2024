@@ -343,7 +343,7 @@ IoT 개발자과정 SQLServer 학습 리포지토리
         - FUNCTION
         - AGGREGATE FUNC
         - JOIN
-        - SET ...
+        - SET...
 
 ## 9일차
 - 실무실습
